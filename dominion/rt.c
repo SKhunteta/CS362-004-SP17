@@ -3,7 +3,7 @@
 #include <stdlib.h> 
 
 int main(int argc, char** argv) {
-  if (argc < 3) {
+  if (argc < 1) {
     printf ("Not enough inputs:  seed target\n");
   }
 
