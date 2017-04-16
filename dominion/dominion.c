@@ -45,7 +45,7 @@ int initializeGame(int numPlayers, int kingdomCards[10], int randomSeed,
   PutSeed((long)randomSeed);
   
   //check number of players
-  if (numPlayers > MAX_PLAYERS || numPlayers < 2)
+  if (numPlayers > MAX_PLAYERS || numPlayers < 0)
     {
       return -1;
     }
