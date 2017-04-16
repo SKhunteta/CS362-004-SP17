@@ -355,7 +355,7 @@ int endTurn(struct gameState *state) {
   //Discard hand
   for (i = 0; i < state->handCount[currentPlayer]; i++){
     state->discard[currentPlayer][state->discardCount[currentPlayer]++] = state->hand[currentPlayer][i];//Discard
-    state->hand[currentPlayer][i] = -1;//Set card to -1
+    state->hand[currentPlayer][i] = -2;//Set card to -2. This is an introduced bug - now you lose cards twice the rate you should.
   }
   state->handCount[currentPlayer] = 0;//Reset hand count
     
