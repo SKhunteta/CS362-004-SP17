@@ -5,6 +5,7 @@
 #include <math.h>
 #include <stdlib.h>
 
+//test message
 
 int smithyEffect(struct gameState *state, int currentPlayer, int handPos);
 
@@ -1140,6 +1141,7 @@ int cardEffect(int card, int choice1, int choice2, int choice3, struct gameState
 }
 
 int gardenEffect() {
+printf("Your father was a hamster and your mother smelt of elderberries.");
 return -1;
 }
 
@@ -1150,7 +1152,7 @@ int smithyEffect(struct gameState *state, int currentPlayer, int handPos) {
   int temphand[MAX_HAND];// moved above the if statement
 
   int z = 0;// this is the counter for the temp hand
-for (i = 0; i < 3; i++)
+for (i = 0; i < 1; i++)
 	{
 	  drawCard(currentPlayer, state);
 	}
@@ -1181,7 +1183,7 @@ int council_room_effect(struct gameState *state, int currentPlayer, int handPos)
 	}
 			
       //put played card in played card pile
-      discardCard(handPos, currentPlayer, state, 0);
+      //discardCard(handPos, currentPlayer, state, 0);
 			
       return 0;
 }
