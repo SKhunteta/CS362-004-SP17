@@ -45,7 +45,6 @@ int main()
 
 	printf("----------------- Testing Card: %s ----------------\n", TESTCARD);
 	
-	// ----------- TEST 1: player 1 get +4 cards --------------
 	printf("TEST 1: player 1 receives +4 cards\n");
 	
 	// copy the game state to a test case
@@ -57,14 +56,12 @@ int main()
 	printf("hand count = %d, expected = %d\n", testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded);
 	assertEqual(testG.handCount[thisPlayer], G.handCount[thisPlayer] + newCards - discarded, 1);
 	
-	// ----------- TEST 2: player 1 get +1 card --------------
 	printf("TEST 2: player 1 gets +1 card\n");
 	
 	buy++;
 	printf("buy count = %d, expected = %d\n", testG.numBuys, G.numBuys + buy);
 	assertEqual(testG.numBuys, G.numBuys + buy, 2);
 	
-	// ----------- TEST 3: Other player should add 1 card --------------	
 	printf("TEST 3: State change should occur for other players\n");
 	printf("player 2 hand count = %d, expected = %d\n", testG.handCount[thisPlayer+1], G.handCount[thisPlayer+1] + 1);
 	assertEqual(testG.handCount[thisPlayer+1], G.handCount[thisPlayer+1] + 1, 3);
