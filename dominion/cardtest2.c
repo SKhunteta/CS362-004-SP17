@@ -1,4 +1,4 @@
-// unit test on playSmithy function (line 1294)
+
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
