@@ -1,3 +1,9 @@
+/* -----------------------------------------------------------------------
+ * Assignment 4
+ * randomtestadventurer.c
+ * Shreyans Khunteta
+ 
+ */
 
 #include "dominion.h"
 #include "dominion_helpers.h"
@@ -22,7 +28,8 @@ int main () {
    int i, j, k;
    int choice1 = 0, choice2 = 0, choice3 = 0, handPos = 0, bonus = 0;
 
-   int allowedCards[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, council_room};
+   int allowedCards[10] = {adventurer, embargo, village, minion, mine, 
+   cutpurse, sea_hag, tribute, smithy, council_room};
 
    srand(time(NULL));
 
@@ -116,14 +123,10 @@ int main () {
 	 testDraw++;
 	 passedAllTestsFlag = 0;
       }
-      else {
-      }
       
       if (afterCoins < beforeCoins) {
 	 testDraw++;
 	 passedAllTestsFlag = 0;
-      }
-      else {
       }
 
 
@@ -131,21 +134,15 @@ int main () {
 	 failedDiscard++;
 	 passedAllTestsFlag = 0;
       }
-      else {
-      }
 
       if (trSilver != 0) {
 	 failedDiscard++;
 	 passedAllTestsFlag = 0;
       }
-      else {
-      }
 
       if (trCopper != 0) {
 	 failedDiscard++;
 	 passedAllTestsFlag = 0;
-      }
-      else {
       }
 
 

@@ -1,3 +1,10 @@
+/* -----------------------------------------------------------------------
+ * Assignment 4
+ * randomtest1.c
+ * Shreyans Khunteta
+ 
+ */
+
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
@@ -21,7 +28,8 @@ int main () {
    int i = 0;
    int choice1 = 0, choice2 = 0, choice3 = 0, handPos = 0, bonus = 0;
 
-   int allowedCards[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, council_room};
+   int allowedCards[10] = {adventurer, embargo, village, minion, mine, 
+   cutpurse, sea_hag, tribute, smithy, council_room};
 
    srand(time(NULL));
 
@@ -61,12 +69,8 @@ int main () {
       //printf("Testing Smithy card...\n");
 
       if (currDeck != (startDeck - 3)) {
-	 //printf("\tDeck count - FAIL\n");
 	 failedDeckCount++;
 	 passedAllTestsFlag = 0;
-      }
-      else {
-	 //printf("\tDeck count - PASS\n");
       }
 
       if (currHand != (startHand + 2)) {
@@ -74,19 +78,12 @@ int main () {
 	 failedHandCount++;
 	 passedAllTestsFlag = 0;
       }
-      else {
-	 //printf("\tCards drawn - PASS\n");
-      }
 
       if (currDiscard != (startDiscard + 1)) {
 	 //printf("\tCards discarded - FAIL\n");
 	 failedDiscardCount++;
 	 passedAllTestsFlag = 0;
       }
-      else {
-	 //printf("\tCards discarded - PASS\n");
-      }
-
 
       if (passedAllTestsFlag == 1) {
 	 //printf("All tests passed!!\n");

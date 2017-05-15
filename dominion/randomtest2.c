@@ -1,3 +1,8 @@
+/* -----------------------------------------------------------------------
+ * Assignment 4
+ * randomtest2.c
+ * Shreyans Khunteta
+*/
 #include "dominion.h"
 #include "dominion_helpers.h"
 #include "rngs.h"
@@ -21,7 +26,8 @@ int main () {
    int i = 0;
    int choice1 = 0, choice2 = 0, choice3 = 0, handPos = 0, bonus = 0;
 
-   int allowedCards[10] = {adventurer, embargo, village, minion, mine, cutpurse, sea_hag, tribute, smithy, council_room};
+   int allowedCards[10] = {adventurer, embargo, village, minion, mine, 
+   cutpurse, sea_hag, tribute, smithy, council_room};
 
    srand(time(NULL));
 

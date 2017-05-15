@@ -115,8 +115,6 @@ randomtest2.out: randomtest2.o dominion.o rngs.o
 	./randomtest2 > randomtest2.out
 	gcov -f -b dominion.c >> randomtest2.out
 
-
-
 randomtestadventurer.out: randomtestadventurer.o dominion.o rngs.o
 	gcc -o randomtestadventurer -g randomtestadventurer.c dominion.o rngs.o $(CFLAGS)
 	./randomtestadventurer > randomtestadventurer.out
