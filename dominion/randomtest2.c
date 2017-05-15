@@ -52,7 +52,7 @@ int main () {
 
 
       //Play the card
-      cardEffect(great_hall, choice1, choice2, choice3, &g, handPos, &bonus);
+      cardEffect(feast, choice1, choice2, choice3, &g, handPos, &bonus);
 
 
       //Note the state after playing the card
@@ -88,7 +88,7 @@ int main () {
    }
 
       
-   printf("Great Hall tests summary:\n");
+   printf("Feast tests summary:\n");
    printf("\tPASSED: %d\n", numTestsPassed);
    printf("\tFAILED (hand): %d\n", failedHandCount);
    printf("\tFAILED (actions): %d\n\n", failedActionsCount);
