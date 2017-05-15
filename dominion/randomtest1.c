@@ -22,8 +22,8 @@ int main () {
 
    int seed = 1000;
    int numTestsPassed = 0, passedAllTestsFlag = 0;
-   int numPlayers = 2, currPlayer = 0;
-   int deckSize, handSize, startDeck, currDeck, startHand, currHand, startDiscard, currDiscard;
+   int numPlayers = 2, currentPlayer = 0;
+   int deckSize, handSize, startDeck, currentDeck, startHand, currentHand, startDiscard, currentDiscard;
    int failedDeckCount = 0, failedHandCount = 0, failedDiscardCount = 0;
    int i = 0;
    int choice1 = 0, choice2 = 0, choice3 = 0, handPos = 0, bonus = 0;
@@ -44,10 +44,10 @@ int main () {
 
       g.deckCount[0] = deckSize - handSize;
       g.handCount[0] = handSize;
-      handPos = g.hand[currPlayer][g.handCount[currPlayer]-1];
+      handPos = g.hand[currentPlayer][g.handCount[currentPlayer]-1];
 
 
-      //Note the current state before playing the card
+      //Note the currentent state before playing the card
       startDeck = g.deckCount[0];
       startHand = g.handCount[0];
       startDiscard = g.playedCardCount;
@@ -58,9 +58,9 @@ int main () {
 
 
       //Note the state after playing the card
-      currDeck = g.deckCount[0];
-      currHand = g.handCount[0];
-      currDiscard = g.playedCardCount;
+      currentDeck = g.deckCount[0];
+      currentHand = g.handCount[0];
+      currentDiscard = g.playedCardCount;
 
 
       //NOW... the moment of reckoning... the tests
@@ -68,25 +68,22 @@ int main () {
 
       //printf("Testing Smithy card...\n");
 
-      if (currDeck != (startDeck - 3)) {
+      if (currentDeck != (startDeck - 3)) {
 	 failedDeckCount++;
 	 passedAllTestsFlag = 0;
       }
 
-      if (currHand != (startHand + 2)) {
-	 //printf("\tCards drawn - FAIL\n");
+      if (currentHand != (startHand + 2)) {
 	 failedHandCount++;
 	 passedAllTestsFlag = 0;
       }
 
-      if (currDiscard != (startDiscard + 1)) {
-	 //printf("\tCards discarded - FAIL\n");
+      if (currentDiscard != (startDiscard + 1)) {
 	 failedDiscardCount++;
 	 passedAllTestsFlag = 0;
       }
 
       if (passedAllTestsFlag == 1) {
-	 //printf("All tests passed!!\n");
 	 numTestsPassed++;
       }
 

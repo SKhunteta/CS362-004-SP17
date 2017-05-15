@@ -1,7 +1,7 @@
 Great Hall tests summary:
-	PASSED: 120523
-	FAILED (hand): 1683
-	FAILED (actions): 1264
+	PASSED: 120533
+	FAILED (hand): 1702
+	FAILED (actions): 1245
 
 Function 'compare'
 Lines executed:83.33% of 6
