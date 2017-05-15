@@ -3,6 +3,8 @@
  * randomtest1.c
  * Shreyans Khunteta
  
+We are testing the Smithy card here. Let's hope it works!
+ 
  */
 
 #include "dominion.h"
@@ -21,10 +23,21 @@ int main () {
    struct gameState g;
 
    int seed = 1000;
-   int numTestsPassed = 0, passedAllTestsFlag = 0;
-   int numPlayers = 2, currentPlayer = 0;
-   int deckSize, handSize, startDeck, currentDeck, startHand, currentHand, startDiscard, currentDiscard;
-   int failedDeckCount = 0, failedHandCount = 0, failedDiscardCount = 0;
+   int numTestsPassed = 0;
+	int passedAllTestsFlag = 0;
+   int numPlayers = 2; 
+   int currentPlayer = 0;
+   int deckSize;
+   int handSize;
+   int startDeck;
+   int currentDeck;
+   int startHand;
+   int currentHand;
+   int startDiscard;
+   int currentDiscard;
+   int failedDeckCount = 0;
+   int failedHandCount = 0;
+   int failedDiscardCount = 0;
    int i = 0;
    int choice1 = 0; 
    int choice2 = 0;

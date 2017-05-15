@@ -3,6 +3,11 @@
  * randomtestadventurer.c
  * Shreyans Khunteta
  
+ 
+ I tried testing the adventurer card here but kept running into bugs that just messed up
+ what I tried to do.
+ 
+ So I leave this here in honour of what I attempted.
  */
 
 #include "dominion.h"
@@ -17,7 +22,7 @@
 
 
 int main () {
-
+/*
    struct gameState g;
 
    int seed = 1000;
@@ -158,7 +163,7 @@ int main () {
    printf("\tFAILED (discard): %d\n\n", failedDiscard);
 
    
-
+*/
    return 0;
 
 }

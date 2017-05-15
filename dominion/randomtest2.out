@@ -1,7 +1,7 @@
 Feast tests summary:
-	PASSED: 1304
+	PASSED: 1218
 	FAILED (hand): 0
-	FAILED (actions): 122152
+	FAILED (actions): 122238
 
 Function 'compare'
 Lines executed:83.33% of 6
