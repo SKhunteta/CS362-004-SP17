@@ -1,7 +1,7 @@
-Great Hall tests summary:
-	PASSED: 1226
+Feast tests summary:
+	PASSED: 1229
 	FAILED (hand): 0
-	FAILED (actions): 122230
+	FAILED (actions): 122227
 
 Function 'compare'
 Lines executed:83.33% of 6

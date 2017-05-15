@@ -24,7 +24,11 @@ int main () {
    int deckSize, handSize, startHand, currHand, startNumActions, currNumActions;
    int failedHandCount = 0, failedActionsCount = 0;
    int i = 0;
-   int choice1 = 0, choice2 = 0, choice3 = 0, handPos = 0, bonus = 0;
+   int choice1 = 0; 
+   int choice2 = 0;
+   int choice3 = 0;
+   int handPos = 0;
+   int bonus = 0;
 
    int allowedCards[10] = {adventurer, embargo, village, minion, mine, 
    cutpurse, sea_hag, tribute, smithy, council_room};
@@ -59,7 +63,7 @@ int main () {
       currHand = g.handCount[0];
       currNumActions = g.numActions;
       if (rand() % 100 == 1) {	//Test for an intentionally bad condition
-	 currNumActions += 1;
+	 	currNumActions += 1;
       }
 
 
