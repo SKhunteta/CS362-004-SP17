@@ -1,0 +1,6 @@
+ 
+Bug reports
+ 
+We had a few bugs here! One notable bug is that buyCard fails - currency does not get added to the hand and cards are not removed from the hand.
+ 
+The other failure was in scoreFor. scoreFor consistently fails, giving us completely inaccurate results.
