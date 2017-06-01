@@ -1,0 +1,95 @@
+LET'S START WITH THEM UNIT TESTS FIRST
+unittest1.c:
+
+####################
+Unit test 1 - buyCard()
+
+--- Testing player 0
+TEST 1: Testing successful buy
+buyCard() passes -  function exited without error
+buyCard() passes -  numBuys decremented after buy
+buyCard() fails -  currency was not removed from hand
+buyCard() fails -  no card added to hand
+TEST 2: Testing unsuccessful buy (not enough coins)
+buyCard() passes -  -1 return value
+TEST 3: Testing unsuccessful buy (empty supply)
+buyCard() passes -  -1 return value
+
+--- Testing player 1
+TEST 1: Testing successful buy
+buyCard() passes -  function exited without error
+buyCard() passes -  numBuys decremented after buy
+buyCard() fails -  currency was not removed from hand
+buyCard() fails -  no card added to hand
+TEST 2: Testing unsuccessful buy (not enough coins)
+buyCard() passes -  -1 return value
+TEST 3: Testing unsuccessful buy (empty supply)
+buyCard() passes -  -1 return value
+File 'dominion.c'
+Lines executed:20.31% of 645
+dominion.c:creating 'dominion.c.gcov'
+
+unittest2.c:
+
+####################
+Unit test 2 - getCost()
+TEST 1: Get cost of curse: 
+ getCost passes - cost of Curse is correct
+TEST 2: Get cost of copper: 
+getCost passes - cost of Copper is correct
+TEST 3: Get cost of silver: 
+getCost passes - cost of Silver is correct
+File 'dominion.c'
+Lines executed:20.78% of 645
+dominion.c:creating 'dominion.c.gcov'
+
+unittest3.c:
+
+####################
+Unit test 3 - scoreFor()
+
+--- Testing player 0
+TEST 1: Testing Estates: 5 in hand, 10 in discard, 15 in deck
+scoreFor() fails -  returned score 25, expected 30
+TEST 2: Testing Great Halls: 5 in hand, 10 in discard, 15 in deck
+scoreFor() fails -  returned score 25, expected 180
+TEST 3: Testing Gardens: 5 in hand, 10 in discard, 15 in deck
+scoreFor() fails -  returned score 0, expected 90
+
+--- Testing player 1
+TEST 1: Testing Estates: 5 in hand, 10 in discard, 15 in deck
+scoreFor() fails -  returned score 25, expected 30
+TEST 2: Testing Great Halls: 5 in hand, 10 in discard, 15 in deck
+scoreFor() fails -  returned score 25, expected 180
+TEST 3: Testing Gardens: 5 in hand, 10 in discard, 15 in deck
+scoreFor() fails -  returned score 0, expected 90
+File 'dominion.c'
+Lines executed:26.51% of 645
+dominion.c:creating 'dominion.c.gcov'
+
+unittest4.c:
+
+###################
+Unit test 4 - shuffle()
+
+--- Testing player 0
+TEST 1: Testing incomplete game
+isGameOver() passes -  game will continue
+TEST 2: Testing empty Province pile as that ends the game
+isGameOver() passes -  game ended correctly
+TEST 3: Testing three empty supply piles
+isGameOver() passes -  game ended correctly
+
+--- Testing player 1
+TEST 1: Testing incomplete game
+isGameOver() passes -  game will continue
+TEST 2: Testing empty Province pile as that ends the game
+isGameOver() passes -  game ended correctly
+TEST 3: Testing three empty supply piles
+isGameOver() passes -  game ended correctly
+File 'dominion.c'
+Lines executed:27.91% of 645
+dominion.c:creating 'dominion.c.gcov'
+
+CARD TEST RESULTS COMING RIGHT UP
+cardtest1.c:
